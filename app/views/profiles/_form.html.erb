@@ -1,0 +1,62 @@
+<%= form_with(model: profile, local: true) do |form| %>
+  <% if profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(profile.errors.count, "error") %> prohibited this profile from being saved:</h2>
+
+      <ul>
+      <% profile.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :profile_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :gender %>
+    <%= form.text_field :gender, id: :profile_gender %>
+  </div>
+
+  <div class="field">
+    <%= form.label :userId %>
+    <%= form.text_field :userId, id: :profile_userId %>
+  </div>
+
+  <div class="field">
+    <%= form.label :age %>
+    <%= form.number_field :age, id: :profile_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :feet %>
+    <%= form.number_field :feet, id: :profile_feet %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inch %>
+    <%= form.number_field :inch, id: :profile_inch %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.number_field :weight, id: :profile_weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :fitnessGoal %>
+    <%= form.text_field :fitnessGoal, id: :profile_fitnessGoal %>
+  </div>
+
+  <div class="field">
+    <%= form.label :token %>
+    <%= form.text_field :token, id: :profile_token %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
