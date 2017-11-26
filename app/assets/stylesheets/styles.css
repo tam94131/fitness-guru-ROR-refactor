@@ -1,0 +1,145 @@
+.jumbotron {
+	position: relative;
+	background-color: transparent;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.jumbotron .img {
+	position: absolute;
+	left:0; top:0;
+	background-size: cover;
+	height: 100%;
+	width:100%;
+	background-image: url('../images/best-personal-trainer-nj.jpg');
+	/*background-image: url('../images/header.jpg');*/
+	opacity: 0.2;
+	z-index: -1;
+}
+
+.jumbotron h1 {
+	font-size: 80px;
+	text-shadow: 2px 2px #ff0000;
+	color: #ffa54f;
+}
+
+header {
+	background-color: #b9d3ee;
+	height: 50px;
+}
+
+body, .copytext {
+	font-family: 'Allerta Stencil', sans-serif;
+	background-color: rgba(246,254,255,.8);
+}
+
+h1, h2 {
+	font-family: 'Wallpoet', cursive;
+	margin-bottom: 20px;
+}
+
+p {
+	font-size: 16px;
+}
+
+a:hover {
+     text-decoration:none;
+     text-shadow: 1px 1px 1px #555;
+}
+
+.copytext {
+	font-size: 24px;
+	line-height: 30px;
+}
+
+.profilestable {
+	border: 7px solid #999;
+	border-style: dashed;
+	/* border-collapse: collapse; */
+    margin: 30px;
+}
+
+.profilestable tr:hover {
+	background-color: #ffe28a;
+}
+
+.profilestable th {
+	padding: 15px;
+    text-align: center;
+	font-size: 20px;
+}
+
+.profilestable td {
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.showprofile td {
+	padding: 0px 40px;
+}
+
+footer {
+	height: 40px;
+	text-align: center;
+	font-size: 12px;
+	background-color: #b9d3ee;
+}
+
+
+
+nav button {
+	margin: 10px;
+	border-radius: 8px;
+	border: none; 
+}
+
+button {
+	/*margin: 10px;*/
+	border-radius: 8px;
+	border: none; 
+}
+
+#create-btn {
+	background-color: #ffa54f;
+}
+
+
+#panel-body {
+	margin-bottom: 20px;
+}
+
+#built-in-content {
+	font-size: 24px;
+}
+
+.bmi-chart {
+	/*background-color: orange; */
+	background-color: #ffa54f;
+	height:350px;
+}
+
+.line-chart {
+	background-color: skyblue; 
+	height:350px;
+}
+
+.recBlock {
+	border-style: double;
+	border: 1px .5px 1px .5px;
+}
+
+.recTitle {
+	border: 2px outset;
+}
+
+.recContent {
+	margin-top: 15px;
+	height: 280px;
+}
+
+#recommendation .control-label{
+	font-family: 'Allerta Stencil', sans-serif;
+	font-weight: 200;
+}
+

@@ -1,49 +1,81 @@
+
+<h1>Profile for <%= @profile.name %> </h1>
+
 <p id="notice"><%= notice %></p>
 
+<div class="showprofile">
+<table><tr>
+<td>
 <p>
-  <strong>Name:</strong>
-  <%= @profile.name %>
+  <strong>Name:</strong><%= @profile.name %>
 </p>
 
 <p>
-  <strong>Gender:</strong>
-  <%= @profile.gender %>
+  <strong>Gender:</strong><%= @profile.gender %>
 </p>
 
 <p>
-  <strong>Userid:</strong>
-  <%= @profile.userId %>
+  <strong>Userid:</strong><%= @profile.userId %>
 </p>
 
 <p>
-  <strong>Age:</strong>
-  <%= @profile.age %>
+  <strong>Age:</strong><%= @profile.age %>
 </p>
 
 <p>
-  <strong>Feet:</strong>
-  <%= @profile.feet %>
+  <strong>Height:</strong><%= @profile.feet %>' <%= @profile.inch %>"
 </p>
 
 <p>
-  <strong>Inch:</strong>
-  <%= @profile.inch %>
+  <strong>Weight:</strong><%= @profile.weight %>
 </p>
 
 <p>
-  <strong>Weight:</strong>
-  <%= @profile.weight %>
-</p>
-
-<p>
-  <strong>Fitnessgoal:</strong>
-  <%= @profile.fitnessGoal %>
-</p>
-
-<p>
-  <strong>Token:</strong>
-  <%= @profile.token %>
+  <strong>Fitness Goal:</strong><%= @profile.fitnessGoal %>
 </p>
 
 <%= link_to 'Edit', edit_profile_path(@profile) %> |
-<%= link_to 'Back', profiles_path %>
+<%= link_to 'Main', profiles_path %>
+</td>
+
+<td>
+  <% if @weights.count==0 %>
+    <p>There are no weights recorded</p>
+  <% else %>
+    <% @weights.each do |weight| %>
+      <p><strong>Weight:</strong> 
+      <%= weight.updated_at.localtime.strftime('%a, %d %b %Y %H:%M') %> was <%=weight.weight%>lbs</p>
+    <% end %>
+    <br>
+    <p><strong>Current BMI:</strong>
+      <%=@BMI%> which is <%=@BMI_message%>
+    </p>
+  <% end %>
+</td>
+
+</tr></table>
+</div>
+
+<table class="profilestable">
+  <tr>
+  <th>Resistance</th>
+  <th>Cardio</th>
+  <th>Nutrition</th>
+  </tr>
+
+  <tr>
+  <td>
+    <p><%=@recommend['resistance']%></p>
+    <p><a href=<%=@recommend['resources'][0]%> target="_blank">Beginner workout routine</a></p>
+  </td>
+  <td>
+    <p><%=@recommend['cardio']%>   </p>
+    <p><a href=<%=@recommend['resources'][1]%> target="_blank">Target heart rate zones</a></p>
+  </td>
+  <td>
+    <p><%=@recommend['nutrition']%></p>
+    <p><a href=<%=@recommend['resources'][2]%> target="_blank">Sample meal planning</a></p>
+  </td>
+</tr></table>
+
+

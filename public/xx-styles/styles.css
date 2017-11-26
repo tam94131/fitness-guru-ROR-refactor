@@ -1,0 +1,121 @@
+.jumbotron {
+	position: relative;
+	background-color: transparent;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.jumbotron .img {
+	position: absolute;
+	left:0; top:0;
+	background-size: cover;
+	height: 100%;
+	width:100%;
+	background-image: url('./images/best-personal-trainer-nj.jpg');
+	/*background-image: url('../images/header.jpg');*/
+	opacity: 0.2;
+	z-index: -1;
+}
+
+.jumbotron h1 {
+	font-size: 80px;
+	text-shadow: 2px 2px #ff0000;
+	color: #ffa54f;
+}
+
+nav {
+	/*background-color: lightgrey;*/
+	/*background-color: rgba(202,224,231,1);*/
+	background-color: #b9d3ee;
+	height: 90px;
+}
+
+nav button {
+	margin: 10px;
+	border-radius: 8px;
+	border: none; 
+}
+
+button {
+	/*margin: 10px;*/
+	border-radius: 8px;
+	border: none; 
+}
+
+/*#log-in-btn {
+	background-color: blue;
+}*/
+
+#create-btn {
+	background-color: #ffa54f;
+}
+
+
+body {
+	font-family: 'Allerta Stencil', sans-serif;
+	background-color: rgba(246,254,255,.8);
+}
+
+#panel-body {
+	margin-bottom: 20px;
+}
+
+#built-in-content {
+	font-size: 24px;
+}
+
+h1, h2 {
+	font-family: 'Wallpoet', cursive;
+	margin-bottom: 20px;
+}
+
+.bmi-chart {
+	/*background-color: orange; */
+	background-color: #ffa54f;
+	height:350px;
+}
+
+.line-chart {
+	background-color: skyblue; 
+	height:350px;
+}
+
+.recBlock {
+	border-style: double;
+	border: 1px .5px 1px .5px;
+}
+
+.recTitle {
+	border: 2px outset;
+}
+
+.recContent {
+	margin-top: 15px;
+	height: 280px;
+}
+
+#recommendation .control-label{
+	font-family: 'Allerta Stencil', sans-serif;
+	font-weight: 200;
+}
+
+table {
+    font-size: 24px;
+    margin: 30px;
+}
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+a:hover {
+     text-decoration:none;
+     text-shadow: 1px 1px 1px #555;
+}
+
+footer {
+	height: 80px;
+	/*background-color: lightgrey;*/
+	/*background-color: rgba(202,224,231,1);*/
+	background-color: #b9d3ee;
+}

@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>FitnessGuruRorRefactor</title>
+    <title>Fitness Guru (ROR Refactor)</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link rel="stylesheet" href="./styles/styles.css">
+
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script type="text/javascript" src="../scripts/fitness.js"> 
+    </script>
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil|Wallpoet" rel="stylesheet">
+
   </head>
+
+  <header>
+ 	<img height=45 src="../images/icon-healing.png" /> 
+  </header>
 
   <body>
     <%= yield %>
   </body>
+
+  <footer>
+  	<p>An attempt made by Tahl Milburn 2017 <br/>
+  	@ General Assembly</p>
+  </footer>
+
 </html>
