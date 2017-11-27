@@ -1,0 +1,16 @@
+
+<h1>All the Weights</h1>
+
+<p id="notice"><%= notice %></p>
+
+  <% if @weights.count==0 %>
+    <p>There are no weights recorded</p>
+
+  <% else %>
+    <% @weights.each do |weight| %>
+      <p><strong>Weight:</strong>
+      For <%=weight.userId%> updated  
+      <%= weight.updated_at.localtime.strftime('%a, %d %b %Y %H:%M') %> was <%=weight.weight%>lbs</p>
+    <% end %>
+
+  <% end %>

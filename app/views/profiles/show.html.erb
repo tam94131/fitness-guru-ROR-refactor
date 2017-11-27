@@ -51,6 +51,7 @@
       <%=@BMI%> which is <%=@BMI_message%>
     </p>
   <% end %>
+  <%= link_to 'New Weight', '/weights/' + @profile.id.to_s + '/new' %>
 </td>
 
 </tr></table>

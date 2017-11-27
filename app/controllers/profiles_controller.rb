@@ -10,21 +10,11 @@ class ProfilesController < ApplicationController
   # GET /profiles/1
   # GET /profiles/1.json
   def show
-    puts '^^^'
-    # puts @profile.userId
     @weights_count = Weight.count
-    # puts @weights_count
     @weights = Weight.where(userId: @profile.userId)
-    # puts @weights
-    # puts '$$$'
     @BMI = calc_BMI @profile.weight, @profile.feet, @profile.inch
     @BMI_message = calc_BMI_message(@BMI)
-    # puts @BMI,@BMI_message
-    puts '$$$'
     @recommend = profileToRecomm @profile.fitnessGoal, @BMI_message 
-    puts @recommend
-    puts '***'
-    # render html: '<div>html goes here</div>'.html_safe
   end
 
   # GET /profiles/new

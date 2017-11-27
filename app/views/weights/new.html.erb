@@ -1,0 +1,8 @@
+
+<% name = Profile.find(@id).name %>
+
+<h1>New Weight for <%= name %></h1>
+
+<%= render 'form', weight: @weight %>
+
+<%= link_to 'Cancel', '/profiles/' + @id %>
