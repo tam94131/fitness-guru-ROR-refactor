@@ -1,0 +1,59 @@
+      Prefix Verb   URI Pattern                  Controller#Action
+    profiles GET    /profiles(.:format)          profiles#index
+             POST   /profiles(.:format)          profiles#create
+ new_profile GET    /profiles/new(.:format)      profiles#new
+edit_profile GET    /profiles/:id/edit(.:format) profiles#edit
+     profile GET    /profiles/:id(.:format)      profiles#show
+             PATCH  /profiles/:id(.:format)      profiles#update
+             PUT    /profiles/:id(.:format)      profiles#update
+             DELETE /profiles/:id(.:format)      profiles#destroy
+     weights GET    /weights(.:format)           weights#index
+             POST   /weights(.:format)           weights#create
+  new_weight GET    /weights/new(.:format)       weights#new
+ edit_weight GET    /weights/:id/edit(.:format)  weights#edit
+      weight GET    /weights/:id(.:format)       weights#show
+             PATCH  /weights/:id(.:format)       weights#update
+             PUT    /weights/:id(.:format)       weights#update
+             DELETE /weights/:id(.:format)       weights#destroy
+             GET    /                            profiles#splash
+
+===============
+New Profile - remove weight & token(?) & rename "Fitnessgoal" 
+New Profile - style "Create Profile" button
+Check in work include adding Git repo
+
+PROBABLY
+Main page - Change New Profile link to nav bar button
+Show Profile - change Edit and Back links to Edit & Main page buttons
+New Profile - change Back link to Cancel button
+Edit Profile - change Back link to Cancel button
+Add Google charts to Show Profile page
+Files - find out where images, scripts, stylesheets are being served from
+Put on Heroku
+Fix image link on recommendations
+
+MAYBE
+New Profile - add back weight & have that add a weight to DB
+New Profile - add edit checks
+Edit Profile - add edit checks
+Overall - add auth
+
+-----
+vMain page - Remove "remove" column from table
+xAll ex. main - add logo guy to header bar
+xShow Profile - Add Title 
+xShow Profile - change "Fitnessgoal"
+xAdd ex. main - bigger + correct font
+xShow Profile - Show weights or "no weights recorded"
+xShow Profile - show three part recommendations
+xShow Profile - Add _button_ to add a weight (Add Weight page)
+xNew weight - create view
+
+
+===============
+Qs:
+-How to use javascript function within controller
+-Confused about Hashs and calling properties bracket notation vs. dot
+-If string var has HTML markup, how to use clown hats notation on template page
+-Git messed up again
+
